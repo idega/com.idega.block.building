@@ -4,7 +4,7 @@
   <extend>${base.project.dir}/block-dependencies.xml</extend>
   <pomVersion>3</pomVersion>
   <name>idegaWeb Building Block</name>
-  <artifactId>com.idega.block.buildingr</artifactId>
+  <artifactId>com.idega.block.building</artifactId>
   <currentVersion>1.0-SNAPSHOT</currentVersion>
   <inceptionYear>2000</inceptionYear>
   <shortDescription>Building</shortDescription>
