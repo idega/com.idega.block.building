@@ -7,9 +7,15 @@
   <artifactId>com.idega.block.building</artifactId>
   <currentVersion>1.0.1</currentVersion>
   <!--currentVersion>1.0-SNAPSHOT</currentVersion-->
+
   <inceptionYear>2000</inceptionYear>
   <shortDescription>Building</shortDescription>
   <versions>
+    <version>
+      <id>1.0.1</id>
+      <name>1.0.1</name>
+      <tag>BUILDING_1_0_1</tag>
+    </version>
   </versions>
   <branches/>
   <developers>
@@ -48,6 +54,7 @@
       <artifactId>com.idega.core</artifactId>
       <!--HELPER--><version>3.0.5</version><!--HELPER-->
       <!--HELPERversion>SNAPSHOT</versionHELPER-->
+
       <type>jar</type>
       <url>http://www.idega.com/</url>
       <properties>
@@ -59,6 +66,7 @@
       <artifactId>com.idega.block.media</artifactId>
       <!--HELPER--><version>1.1.2</version><!--HELPER-->
       <!--HELPERversion>SNAPSHOT</versionHELPER-->
+
       <type>jar</type>
       <url>http://www.idega.com/</url>
       <properties>
@@ -70,13 +78,14 @@
       <artifactId>com.idega.block.text</artifactId>
       <!--HELPER--><version>1.0.1</version><!--HELPER-->
       <!--HELPERversion>SNAPSHOT</versionHELPER-->
+
       <type>jar</type>
       <url>http://www.idega.com/</url>
       <properties>
         <eclipse.dependency>true</eclipse.dependency>
       </properties>
     </dependency>
-    </dependencies>
+  </dependencies>
   <build>
     <sourceDirectory>src/java</sourceDirectory>
     <unitTestSourceDirectory>src/test</unitTestSourceDirectory>
