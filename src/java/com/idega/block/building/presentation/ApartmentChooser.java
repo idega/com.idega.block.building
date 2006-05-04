@@ -139,7 +139,7 @@ public class ApartmentChooser extends BuildingEditor{
     return T;
   }
 
-  private Link getATLink(int id,String name){
+  /*private Link getATLink(int id,String name){
     Link L = new Link(name);
       L.setFontColor("#FFFFFF");
       L.addParameter("dr_id",id);
@@ -147,7 +147,7 @@ public class ApartmentChooser extends BuildingEditor{
       //L.addParameter("bm_choice",TYPE);
 
     return L;
-  }
+  }*/
 
   private Link getApLink(String id,String name){
     Link L = new Link(name);

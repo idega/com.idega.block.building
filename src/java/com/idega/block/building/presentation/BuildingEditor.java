@@ -1,7 +1,7 @@
 package com.idega.block.building.presentation;
 
 import java.rmi.RemoteException;
-import java.sql.SQLException;
+//import java.sql.SQLException;
 import java.util.Collection;
 import java.util.Iterator;
 import java.util.StringTokenizer;
@@ -211,10 +211,10 @@ public class BuildingEditor extends com.idega.presentation.Block {
 		add(outerTable);
 	}
 
-	private void doMain(IWContext iwc, boolean ifMulti, int choice) throws RemoteException, FinderException {
+	/*private void doMain(IWContext iwc, boolean ifMulti, int choice) throws RemoteException, FinderException {
 		doBuilding(iwc);
 
-	}
+	}*/
 
 	private void doComplex(IWContext iwc) throws RemoteException, FinderException {
 		Complex eComplex = (eId != null && eId.intValue() > 0) ? service.getComplexHome().findByPrimaryKey(eId) : null;
@@ -276,11 +276,11 @@ public class BuildingEditor extends com.idega.presentation.Block {
 		}
 	}
 
-	private void doQuit(IWContext iwc) throws SQLException {
-	}
+	/*private void doQuit(IWContext iwc) throws SQLException {
+	}*/
 
-	private void doSave(IWContext iwc) throws SQLException {
-	}
+	/*private void doSave(IWContext iwc) throws SQLException {
+	}*/
 
 	private void storeComplex(IWContext iwc) throws RemoteException {
 		String sName = iwc.getParameter("bm_name").trim();
@@ -1291,7 +1291,7 @@ public class BuildingEditor extends com.idega.presentation.Block {
 		return form;
 	}
 
-	private PresentationObject getApartments() throws FinderException, RemoteException {
+	/*private PresentationObject getApartments() throws FinderException, RemoteException {
 		int border = 0;
 		int padding = 6;
 		int spacing = 1;
@@ -1364,9 +1364,9 @@ public class BuildingEditor extends com.idega.presentation.Block {
 		T.setVerticalZebraColored("#942829", "#21304a");
 		return T;
 
-	}
+	}*/
 
-	private PresentationObject getTypes() throws RemoteException, FinderException {
+	/*private PresentationObject getTypes() throws RemoteException, FinderException {
 
 		Collection types = service.getApartmentTypeHome().findAll();
 
@@ -1423,30 +1423,30 @@ public class BuildingEditor extends com.idega.presentation.Block {
 		}
 		return T;
 
-	}
+	}*/
 
-	private Text getHeaderText(int i) {
+	/*private Text getHeaderText(int i) {
 		return getHeaderText(String.valueOf(i));
-	}
+	}*/
 
-	private Text getHeaderText(String s) {
+	/*private Text getHeaderText(String s) {
 		Text T = new Text(s);
 		T.setBold();
 		T.setFontColor("#FFFFFF");
 		return T;
-	}
+	}*/
 
-	private Text getBodyText(int i) {
+	/*private Text getBodyText(int i) {
 		return getHeaderText(String.valueOf(i));
-	}
+	}*/
 
-	private Text getBodyText(String s) {
+	/*private Text getBodyText(String s) {
 		Text T = new Text(s);
 		T.setFontColor("#FFFFFF");
 		return T;
-	}
+	}*/
 
-	private Link getATLink(String id, String name) {
+	/*private Link getATLink(String id, String name) {
 		Link L = new Link(name);
 
 		L.setFontColor("#FFFFFF");
@@ -1454,9 +1454,9 @@ public class BuildingEditor extends com.idega.presentation.Block {
 		L.addParameter(sAction, TYPE);
 		L.addParameter("bm_choice", TYPE);
 		return L;
-	}
+	}*/
 
-	private Link getApLink(String id, String name) {
+	/*private Link getApLink(String id, String name) {
 		Link L = new Link(name);
 
 		L.setFontColor("#FFFFFF");
@@ -1464,7 +1464,7 @@ public class BuildingEditor extends com.idega.presentation.Block {
 		L.addParameter(sAction, APARTMENT);
 		L.addParameter("bm_choice", APARTMENT);
 		return L;
-	}
+	}*/
 
 	/*
 	 * private DropdownMenu drpZip(String name,String display,String

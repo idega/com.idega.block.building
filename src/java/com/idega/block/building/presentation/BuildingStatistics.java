@@ -21,7 +21,7 @@ public class BuildingStatistics extends PresentationObjectContainer {
 
 	private static final String IW_RESOURCE_BUNDLE = "com.idega.block.building";
 	protected IWResourceBundle iwrb;
-	private int complexID;
+	//private int complexID;
 
   public BuildingStatistics() {
 
