@@ -6,8 +6,8 @@
   <name>idegaWeb Building Block</name>
   <artifactId>com.idega.block.building</artifactId>
   <!--currentVersion>1.0.1</currentVersion-->
-  <currentVersion>1.0-SNAPSHOT</currentVersion>
 
+  <currentVersion>3.1.0</currentVersion>
   <inceptionYear>2000</inceptionYear>
   <shortDescription>Building</shortDescription>
   <versions>
@@ -15,6 +15,11 @@
       <id>1.0.1</id>
       <name>1.0.1</name>
       <tag>BUILDING_1_0_1</tag>
+    </version>
+    <version>
+      <id>3.1.0</id>
+      <name>3.1.0</name>
+      <tag>BUILDING_3_1_0</tag>
     </version>
   </versions>
   <branches/>
@@ -52,9 +57,7 @@
     <dependency>
       <groupId>bundles</groupId>
       <artifactId>com.idega.core</artifactId>
-      <!--version>3.0.5</version-->
-      <version>SNAPSHOT</version>
-
+      <version>3.1.0</version>
       <type>jar</type>
       <url>http://www.idega.com/</url>
       <properties>
@@ -64,9 +67,7 @@
     <dependency>
       <groupId>bundles</groupId>
       <artifactId>com.idega.block.media</artifactId>
-      <!--version>1.1.2</version-->
-      <version>SNAPSHOT</version>
-
+      <version>3.1.0</version>
       <type>jar</type>
       <url>http://www.idega.com/</url>
       <properties>
@@ -76,9 +77,7 @@
     <dependency>
       <groupId>bundles</groupId>
       <artifactId>com.idega.block.text</artifactId>
-      <!--version>1.0.1</version-->
-      <version>SNAPSHOT</version>
-
+      <version>3.1.0</version>
       <type>jar</type>
       <url>http://www.idega.com/</url>
       <properties>
