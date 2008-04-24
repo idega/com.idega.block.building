@@ -59,7 +59,8 @@ public void setSpecialAttributes(String name,List attributes){
 }
 
 
-    public void main(IWContext iwc) throws Exception {
+    @Override
+		public void main(IWContext iwc) throws Exception {
       if ( iwrb_ == null ) {
         iwrb_ = getResourceBundle(iwc);
       }
@@ -177,7 +178,7 @@ public void setSpecialAttributes(String name,List attributes){
       roomTable.add(Text.getBreak(),2,1);
 
       roomTable.add(getBoldText(iwrb_.getLocalizedString("size","Size (sqm)")+": "),2,1);
-      String areaString = TextSoap.singleDecimalFormat((double)room.getArea());
+      String areaString = TextSoap.singleDecimalFormat(room.getArea());
         if ( areaString.length() > 0 ) {
           areaString += " m<sup>2</sup>";
         }
@@ -386,7 +387,8 @@ public void setSpecialAttributes(String name,List attributes){
       this.infoStyle=infoStyle;
     }
 
-    public String getBundleIdentifier() {
+    @Override
+		public String getBundleIdentifier() {
       return(IW_RESOURCE_BUNDLE);
     }
 
