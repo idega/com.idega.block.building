@@ -83,14 +83,17 @@ public class BuildingEditor extends com.idega.presentation.Block {
 		includeLinks = include;
 	}
 
+	@Override
 	public String getBundleIdentifier() {
 		return IW_BUNDLE_IDENTIFIER;
 	}
 
+	@Override
 	public String getLocalizedNameKey() {
 		return "building_editor";
 	}
 
+	@Override
 	public String getLocalizedNameValue() {
 		return "Buildings";
 	}
@@ -1555,6 +1558,7 @@ public class BuildingEditor extends com.idega.presentation.Block {
 		return formatText(String.valueOf(i));
 	}
 
+	@Override
 	public void main(IWContext iwc) throws Exception {
 		iwrb = getResourceBundle(iwc);
 		iwb = getBundle(iwc);
@@ -1577,6 +1581,6 @@ public class BuildingEditor extends com.idega.presentation.Block {
 	}
 
 	protected BuildingService getBuildingService(IWContext iwc) throws IBOLookupException {
-		return (BuildingService) IBOLookup.getServiceInstance(iwc, BuildingService.class);
+		return IBOLookup.getServiceInstance(iwc, BuildingService.class);
 	}
 } // class BuildingEditor

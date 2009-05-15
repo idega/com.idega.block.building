@@ -61,12 +61,13 @@ public class BuildingViewer extends Block {
 		apartmentTypeWindowClass = windowClass;
 	}
 
+	@Override
 	public void main(IWContext iwc) throws Exception {
 		if (iwrb_ == null) {
 			iwrb_ = getResourceBundle(iwc);
 		}
 
-		buildingService = (BuildingService) IBOLookup.getServiceInstance(iwc, BuildingService.class);
+		buildingService = IBOLookup.getServiceInstance(iwc, BuildingService.class);
 
 		if (iwc.getParameter(PARAMETER_STRING) != null) {
 			try {
@@ -321,6 +322,7 @@ public class BuildingViewer extends Block {
 		}
 	}
 
+	@Override
 	public String getBundleIdentifier() {
 		return (IW_RESOURCE_BUNDLE);
 	}

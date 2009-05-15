@@ -68,7 +68,7 @@ public void setSpecialAttributes(String name,List attributes){
       if ( iwb_ == null ) {
         iwb_ = getBundle(iwc);
       }
-      service =(BuildingService)IBOLookup.getServiceInstance(iwc,BuildingService.class);
+      service = IBOLookup.getServiceInstance(iwc,BuildingService.class);
       if ( iwc.getParameter(PARAMETER_STRING) != null ) {
         try {
           apartmenttypeid = Integer.parseInt(iwc.getParameter(PARAMETER_STRING));
